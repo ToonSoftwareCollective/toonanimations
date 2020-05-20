@@ -1,4 +1,4 @@
-//Balloon by Oepi-Loepi for Toon
+//Roach by Oepi-Loepi for Toon
 
 import QtQuick 2.1
 
@@ -53,7 +53,7 @@ Item {
 
         Image {
 			id: spriteImage
-			source: "RoachSprites.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/RoachSprites.png"
 			y:0
 			x:-parent.width*sprite.frame
         }
@@ -79,11 +79,19 @@ Item {
                roach.destroy();
             }
 
-            if (roach.y - roach.height > 600) {
+            if (isNxt && (roach.y - roach.height >  600)) {
+               roach.destroy();
+            }
+	    
+	    if (!isNxt && (roach.y - roach.height > 480)) {
                roach.destroy();
             }
 
-            if (roach.x - roach.width > 1024) {
+            if (isNxt && (roach.x - roach.width > 1024)) {
+               roach.destroy();
+            }
+	    
+	    if (!isNxt && (roach.x - roach.width > 600)) {
                roach.destroy();
             }
 
