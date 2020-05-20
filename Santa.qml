@@ -42,7 +42,7 @@ Item {
 
         Image {
 		id: spriteImage
-		source: "SantaSprites2.png"
+		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/SantaSprites2.png"
 		y:0
 		x:-parent.width*sprite.frame
         }
