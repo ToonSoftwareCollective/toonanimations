@@ -9,6 +9,8 @@ Item {
 
     width: 120
     height: 120
+    x : ((Math.random() * parent.width)-60);
+    y : parent.height;
 
     Item {
         id: sprite
@@ -45,7 +47,7 @@ Item {
 
         Image {
 			id: spriteImage
-			source: "Balloon4SpriteSheet.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Balloon4SpriteSheet.png"
 			y:0
 			x:-parent.width*sprite.frame
         }
