@@ -44,7 +44,7 @@ Item {
 
         Image {
 		id: spriteImage
-		source: "http://localhost/images/Whine.png"
+		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Whine.png"
 		y:0
 		x:-parent.width*sprite.frame        
 	}
