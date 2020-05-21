@@ -43,7 +43,7 @@ Item {
 
 	Rectangle {
 		id: spriteImage
-		color: !dimState? "white" : "black"
+		color: "white"
 		anchors.fill: parent 
 		radius: 4
      		Text{
@@ -53,7 +53,7 @@ Item {
 			font.pixelSize:  isNxt ? 30 : 22
 			font.family: qfont.regular.name
 			font.bold: true
-			color: !dimState? "black" : "white"
+			color:  "black" 
 			wrapMode: Text.WordWrap
          		text: "Hello beta testers: click here to close"
      		}
