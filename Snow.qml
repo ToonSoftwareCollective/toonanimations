@@ -66,10 +66,11 @@ Item {
         repeat: true
         onTriggered: {
             snow.y += speed;
-            if (isNxt && snow.y > 700) {
+            if (isNxt && (snow.y - snow.height)> 700) {
                snow.destroy();
             }
-            if (!isNxt && snow.y > 550) {
+	 
+            if (!isNxt && (snow.y - snow.height) > 550) {
                snow.destroy();
             }      
 	  }
