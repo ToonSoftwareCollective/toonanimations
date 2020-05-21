@@ -1,8 +1,9 @@
-//TextAnimation
+//Textanimation
 import QtQuick 2.1
 
 Item {
     id: textanimation
+    property bool dimState: screenStateController.dimmedColors
 
     width: 400
     height: 200
@@ -42,7 +43,7 @@ Item {
 
 	Rectangle {
 		id: spriteImage
-		color: color: !dimState? "white" : "black"	
+		color: !dimState? "white" : "black"
 		anchors.fill: parent 
 		radius: 4
      		Text{
@@ -67,3 +68,4 @@ Item {
     }
 
 }
+
