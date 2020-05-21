@@ -69,7 +69,7 @@ Item {
             if (isNxt && snow.y > 700) {
                snow.destroy();
             }
-            if (isNxt && snow.y > 550) {
+            if (!isNxt && snow.y > 550) {
                snow.destroy();
             }      
 	  }
