@@ -4,7 +4,7 @@ Shows animations on Toon.
 # Requirements:
 - TSC beta enabled on Toon
 
-Usage:
+# Usage:
 create the animation in qml and give the name starting with a Capital
 
 modify the triggerfile in folder trigger:
