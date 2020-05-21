@@ -6,8 +6,8 @@ Item {
 
     width: 120
     height: 120
-    x : ((Math.random() * parent.width)-60);
-    y : -10;
+    x : ((Math.random() * parent.width)-10);
+    y : -50;
 
     Item {
         id: sprite
@@ -68,10 +68,10 @@ Item {
         repeat: true
         onTriggered: {
             confetti.y += speed;
-            if (isNxt && confetti.y > 600) {
+            if (isNxt && confetti.y > 650) {
                confetti.destroy();
             }
-            if (isNxt && confetti.y > 480) {
+            if (isNxt && confetti.y > 530) {
                confetti.destroy();
             }
 
