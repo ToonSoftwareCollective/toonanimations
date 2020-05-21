@@ -63,10 +63,10 @@ Item {
         onTriggered: {
             whine.y += whine.speed;
 
-            if (isNxt &&  whine.y > 600) {
+            if (isNxt &&  (whine.y - whine.height)> 600) {
                 whine.destroy();
             }
-            if (isNxt &&  whine.y > 480) {
+            if (isNxt &&  (whine.y - whine.height) > 480) {
                 whine.destroy();
             }      
 	  }
