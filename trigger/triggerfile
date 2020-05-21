@@ -1,1 +1,1 @@
-{"balloonmode": "Start", "animationtime": "3600000", "animationtype": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/TextAnimation.qml", "visibleindimstate" : "yes"}
+{"balloonmode": "Stop", "animationtime": "1000000", "animationtype": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/TextAnimation.qml", "visibleindimstate" : "yes"}
