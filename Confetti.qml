@@ -71,7 +71,7 @@ Item {
             if (isNxt && confetti.y > 650) {
                confetti.destroy();
             }
-            if (isNxt && confetti.y > 530) {
+            if (!isNxt && confetti.y > 530) {
                confetti.destroy();
             }
 
