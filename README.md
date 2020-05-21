@@ -26,7 +26,7 @@ for example:
 
 to stop:
 
-balloonmode = "Stop"
+set balloonmode to "Stop"
 
 for example:
 
