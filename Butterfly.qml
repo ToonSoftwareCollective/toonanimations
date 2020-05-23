@@ -15,9 +15,7 @@ Item {
         id: sprite
         property int framex: randomNumber(0, 9)
         property int framey: randomNumber(1, 3)
-        //property int colornumber: randomNumber(1, 4)
-        property string pngname : "Butterfly" + randomNumber(1, 4) + ".png"
-
+        property string pngname : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Butterfly" + randomNumber(1, 4) + ".png"
 
         anchors.centerIn: parent
 
@@ -35,9 +33,7 @@ Item {
              angle: 0
         }
         ParallelAnimation {
-        //SequentialAnimation {
-            id: shake
-            //PropertyAnimation { easing.type: Easing.InQuad; duration: 400; target: rotator; property: "angle"; to: 10 }
+            id: fly
             PropertyAnimation { easing.type: Easing.InQuad; duration: 400; target: rotator; property: "angle"; to: rotator.angle+randomNumber(-20, 20) }
             NumberAnimation { target: butterfly; property: "y"; to: (butterfly.y + butterfly.speed*Math.floor(10*Math.sin((rotator.angle-90)*Math.PI/180))); duration: 400 }
             NumberAnimation { target: butterfly; property: "x"; to: (butterfly.x + butterfly.speed*Math.floor(10*Math.cos((rotator.angle-90)*Math.PI/180))); duration: 400 }
@@ -49,19 +45,17 @@ Item {
             interval: 400
 
             onTriggered: {
-                shake.restart();
+                fly.restart();
             }
         }
 
         Image {
             id: spriteImage
-            //source: "Butterfly3.png"
             source: sprite.pngname
             y:-parent.height*sprite.framey
             x:-parent.width*sprite.framex
         }
     }
-
 
     function randomNumber(from, to) {
        return Math.floor(Math.random() * (to - from + 1) + from);
