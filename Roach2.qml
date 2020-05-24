@@ -53,13 +53,13 @@ Item {
 
         Image {
 			id: spriteImage
-            source: "RoachSprites.png"
+            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/RoachSprites.png"
 			y:0
 			x:-parent.width*sprite.frame
             MouseArea{
                 id: roachMouseArea
                 anchors.fill: parent
-                onClicked: { spriteImage.source = "RoachDeath1.png";sprite.frame = 1;roach.destroyed = true;}
+                onClicked: { spriteImage.source = "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/RoachDeath1.png";sprite.frame = 1;roach.destroyed = true;}
             }
         }
     }
