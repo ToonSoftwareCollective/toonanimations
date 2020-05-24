@@ -6,6 +6,9 @@ Balloon:
 Roach:
 {"balloonmode": "Stop", "animationtime": 2000, "animationtype": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Roach.qml","visibleindimstate" : "no", "animationDuration" : "600000"}
 
+Roach2  (clickable):
+{"balloonmode": "Stop", "animationtime": 2000, "animationtype": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Roach2.qml","visibleindimstate" : "no", "animationDuration" : "600000"}
+
 Whine:
 {"balloonmode": "Stop", "animationtime": 1400, "animationtype": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Whine.qml","visibleindimstate" : "yes", "animationDuration" : "600000"}
 
