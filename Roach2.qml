@@ -72,7 +72,7 @@ Item {
     Timer {
          id: destroy;
          repeat: true;
-         interval: 100;
+         interval: 300;
          running: roach.destroyed
          onTriggered: {
              if (sprite.frame >= 3) {
