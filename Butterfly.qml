@@ -7,7 +7,7 @@ Item {
     width: 120
     height: 120
     x :((Math.random() * parent.width)-60)
-    y : parent.height-100
+    y : parent.height+140
 
 
 
