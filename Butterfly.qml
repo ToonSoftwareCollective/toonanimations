@@ -7,7 +7,7 @@ Item {
     width: 120
     height: 120
     x :((Math.random() * parent.width)-60)
-    y : parent.height+140
+    y : parent.height+120
 
 
 
@@ -84,11 +84,11 @@ Item {
                butterfly.destroy();
             }
 
-            if (isNxt && (butterfly.y - butterfly.height >  600)) {
+            if (isNxt && (butterfly.y - butterfly.height -20 >  600)) {
                butterfly.destroy();
             }
 
-            if (!isNxt && (butterfly.y - butterfly.height > 480)) {
+            if (!isNxt && (butterfly.y - butterfly.height -20 > 480)) {
                butterfly.destroy();
             }
 
