@@ -1,8 +1,8 @@
-//Whine
+//Wine
 import QtQuick 2.1
 
 Item {
-    id: whine
+    id: wine
 
     width: 120
     height: 200
@@ -44,7 +44,7 @@ Item {
 
         Image {
 		id: spriteImage
-		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Whine.png"
+		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Wine.png"
 		y:0
 		x:-parent.width*sprite.frame        
 	}
@@ -61,13 +61,13 @@ Item {
         running: true
         repeat: true
         onTriggered: {
-            whine.y += whine.speed;
+            wine.y += wine.speed;
 
-            if (isNxt &&  (whine.y - whine.height)> 600) {
-                whine.destroy();
+            if (isNxt &&  (wine.y - wine.height)> 600) {
+                wine.destroy();
             }
-            if (isNxt &&  (whine.y - whine.height) > 480) {
-                whine.destroy();
+            if (isNxt &&  (wine.y - wine.height) > 480) {
+                wine.destroy();
             }      
 	  }
     }
