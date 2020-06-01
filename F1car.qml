@@ -1,30 +1,25 @@
 
 import QtQuick 2.0
+import QtQuick 2.1
 
-Rectangle {
+Item {
     id: f1car
-    width: parent.width
-    height: parent.height
-    color:"transparent"
 
- Canvas {
-        id: canvas
-        opacity:0.5;
-        anchors.fill: parent
-        antialiasing: true
+    width: 120
+    height: 60
 
-        onPaint: {
-            var context = canvas.getContext("2d")
-            context.clearRect(0, 0, width, height)
-            context.lineWidth = 25
-            context.globalAlpha = 0.1
-            context.strokeStyle = "black"
-            context.path = pathAnim.path
-            context.stroke()
-        }
-    }
-    
-SequentialAnimation {
+
+    Item {
+        id: sprite
+        property int frame: randomNumber(1, 9)
+        anchors.centerIn: parent
+        height: parent.height
+        width: parent.height
+        clip: true
+    	}
+
+  
+    SequentialAnimation {
         running: true
         loops: -1
 
@@ -106,16 +101,17 @@ SequentialAnimation {
 
     }
 
-    Image {
-    id: carImage
-    width: 120
-    height: 60
-        source: "f1car.png"
-        MouseArea{
-            id: roachMouseArea
-            anchors.fill: parent
-            onClicked: { f1car.destroy()}
+        Image {
+            id: carImage
+            source: "f1car.png"
+			y:0
+            x:0
+            height:60
+            width: 120
+            MouseArea{
+                id: carMouseArea
+                anchors.fill: parent
+                onClicked: {f1car.destroy()}
+            }
         }
     }
-
-}
