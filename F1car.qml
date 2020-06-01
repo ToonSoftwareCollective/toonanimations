@@ -9,6 +9,7 @@ Rectangle {
 
     Canvas {
         id: canvas
+        color:"transparent"
         anchors.fill: parent
         antialiasing: true
 
