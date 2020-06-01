@@ -23,7 +23,7 @@ Item {
         loops: -1
 
         PropertyAnimation { properties: "y";
-                            easing.type: Easing.InOutSine;
+                            easing.type: Easing.InOutCirc;
                             easing.amplitude: 2.0;
                             easing.period: 1.5 }
         PathAnimation {
