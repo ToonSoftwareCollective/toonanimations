@@ -7,7 +7,7 @@ Rectangle {
     height: parent.height
     color:"transparent"
 
-/*    Canvas {
+ Canvas {
         id: canvas
         opacity:0.5;
         anchors.fill: parent
@@ -23,8 +23,8 @@ Rectangle {
             context.stroke()
         }
     }
-*/
-    SequentialAnimation {
+    
+   SequentialAnimation {
         running: true
         loops: -1
 
