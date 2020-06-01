@@ -5,6 +5,7 @@ Rectangle {
     id: f1car
     width: parent.width
     height: parent.height
+    color:"transparent"
 
     Canvas {
         id: canvas
