@@ -88,8 +88,8 @@ Item {
 
         Image {
             id: carImage
-            source: "f1car.png"
-			y:0
+            source: "f1caryellow.png"
+	    y:0
             x:0
             height:60
             width: 120
