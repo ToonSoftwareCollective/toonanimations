@@ -9,7 +9,7 @@ Rectangle {
 
 /*    Canvas {
         id: canvas
-        color:"transparent"
+        opacity:0.5;
         anchors.fill: parent
         antialiasing: true
 
@@ -109,7 +109,7 @@ Rectangle {
                 MouseArea{
                     id: carMouseArea
                     anchors.fill: parent
-                    //onClicked: { spriteImage.source = "RoachDeath1.png";sprite.frame = 1;roach.destroyed = true;}
+                    //onClicked: { animationscreen.animationRunning= false}
                 }
             }
 
