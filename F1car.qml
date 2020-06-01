@@ -15,6 +15,7 @@ Item {
         height: parent.height
         width: parent.height
         clip: true
+        x: carImage.height+100
     	}
 
   
@@ -23,8 +24,8 @@ Item {
         loops: -1
 
         PropertyAnimation { properties: "y";
-                            easing.type: Easing.Linear;
-                            easing.amplitude: 2.0;
+                            easing.type: Easing.InOutQuad;
+                            easing.amplitude: 0.5;
                             easing.period: 1.5 }
         PathAnimation {
             id: pathAnim
@@ -35,65 +36,50 @@ Item {
             orientation: PathAnimation.RightFirst
             anchorPoint: Qt.point(carImage.width/2, carImage.height/2)
             path: Path {
-                startX: carImage.height;
-                startY: carImage.height
+                startX: carImage.height+100
+                startY: carImage.height+50
 
-               PathCubic {
-                    x: parent.width-carImage.height
-                    y: carImage.height
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
+                PathCurve  {
+                    x: parent.width-carImage.height-100
+                    y: carImage.height+50
+
                 }
 
-               PathCubic {
+                PathCurve  {
                     x: parent.width -carImage.height
-                    y: parent.height-carImage.height
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
-                }
+                    y: parent.height-carImage.height -100
 
-               PathCubic {
+                }
+                PathCurve  {
                     x: 2* parent.width/3
-                    y: parent.height-carImage.height
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
-                }
+                    y: parent.height-carImage.height-50
 
-               PathCubic {
+                }
+                PathCurve  {
                     x: 2* parent.width/3
                     y: isNxt? 300 : 240
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
-                }
 
-               PathCubic {
-                    x: parent.width/3+20
+                }
+                PathCurve  {
+                    x: parent.width/3
                     y: isNxt? 300 : 240
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
-                }
 
-               PathCubic {
-                    x: parent.width/3+20
-                    y: parent.height-carImage.height
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
                 }
+                PathCurve  {
+                    x: parent.width/3
+                    y:  parent.height-carImage.height-50
 
-               PathCubic {
+                }
+                PathCurve  {
                     x: carImage.height
-                    y: parent.height-carImage.height
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
-                }
+                    y:  parent.height-carImage.height-50
 
-               PathCubic {
-                    x: carImage.height
-                    y: carImage.height
-                    control1X: x; control1Y: y
-                    control2X: x; control2Y: y
                 }
+                PathCurve  {
+                    x: carImage.height+100
+                    y: carImage.height+50
 
+                }
                 onChanged: canvas.requestPaint()
             }
         }
