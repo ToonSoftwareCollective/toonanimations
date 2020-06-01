@@ -110,7 +110,7 @@ Item {
             MouseArea{
                 id: carMouseArea
                 anchors.fill: parent
-                onClicked: {f1car.destroy()}
+                onClicked: {animationscreen.animationRunning= false;f1car.destroy()}
             }
         }
     }
