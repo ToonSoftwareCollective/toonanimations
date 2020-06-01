@@ -61,14 +61,14 @@ Item {
 
                PathCubic {
                     x: 2* parent.width/3
-                    y: 300
+                    y: isNxt? 300 : 200
                     control1X: x; control1Y: y
                     control2X: x; control2Y: y
                 }
 
                PathCubic {
                     x: parent.width/3+20
-                    y: 300
+                    y: isNxt? 300 : 200
                     control1X: x; control1Y: y
                     control2X: x; control2Y: y
                 }
