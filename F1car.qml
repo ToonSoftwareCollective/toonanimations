@@ -67,14 +67,14 @@ Item {
                 }
 
                PathCubic {
-                    x: parent.width/3
+                    x: parent.width/3+20
                     y: 300
                     control1X: x; control1Y: y
                     control2X: x; control2Y: y
                 }
 
                PathCubic {
-                    x: parent.width/3
+                    x: parent.width/3+20
                     y: parent.height-carImage.height
                     control1X: x; control1Y: y
                     control2X: x; control2Y: y
