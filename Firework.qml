@@ -8,8 +8,8 @@ Item {
 
 	Rectangle {
 		id: root
-		width: 1024
-		height: 600
+		width: isNxt? 1024 : 800
+		height: isNxt? 600 : 480
 		color: "transparent"
 
 		ParticleSystem {
