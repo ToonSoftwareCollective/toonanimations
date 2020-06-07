@@ -96,4 +96,15 @@ Item {
 			}
 		}
 	}//rectangle
+	
+	Timer {
+        	interval: 1000
+        	running: true
+        	repeat: true
+        	onTriggered: {
+			if (animationscreen.animationRunning==false) {
+                		fireworks.destroy();
+            		}
+		}
+	}
 }//screen
