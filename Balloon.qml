@@ -11,6 +11,14 @@ Item {
     height: 120
     x : ((Math.random() * parent.width)-60);
     y : parent.height;
+    
+    Text {
+	text: "Hello World!"
+	font.family: "Helvetica"
+	font.pointSize: 20
+	color: "red"
+}
+    //  animationscreen.animationRunning
 
     Item {
         id: sprite
