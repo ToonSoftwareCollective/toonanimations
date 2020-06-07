@@ -87,7 +87,7 @@ Item {
 
         Image {
             id: carImage
-            source: "f1caryellow.png"
+            source: "f1carblue.png"
 	    y:0
             x:0
             height:60
