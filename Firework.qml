@@ -98,7 +98,7 @@ Item {
 	}//rectangle
 	
 	Timer {
-        	interval: 1000
+        	interval: 2500
         	running: true
         	repeat: true
         	onTriggered: {
