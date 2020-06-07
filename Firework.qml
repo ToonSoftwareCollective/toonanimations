@@ -44,7 +44,7 @@ Item {
 			system: particlesSystem
 			enabled: true
 			lifeSpan: 1600
-			maximumEmitted: 6
+			maximumEmitted: 5
 			group: "A"
 			anchors{
 				left: parent.left
@@ -88,9 +88,9 @@ Item {
 				group: "C"
 				enabled: true
 				anchors.fill: parent
-				lifeSpan: 2000
+				lifeSpan: 1700
 				emitRatePerParticle: 350
-				size: 10
+				size: 12
 				velocity: AngleDirection {angleVariation: 360; magnitude: 100}
 				acceleration: PointDirection {y:  20}
 			}
