@@ -12,7 +12,7 @@ Item {
 		id: root
 		width: 1024
 		height: 800
-		color: "transparent"
+		color: "grey"
 
 		ParticleSystem {
 			id: particlesSystem
