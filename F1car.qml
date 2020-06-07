@@ -6,8 +6,6 @@ Item {
 
     width: 120
     height: 60
- 
-    if (animationscreen.animationRunning === false){this->close();}
 
     Item {
         id: sprite
@@ -81,11 +79,11 @@ Item {
                     y: carImage.height+50
 
                 }
-                onChanged: canvas.requestPaint()
+                onChanged:     {!animationscreen.animationRunning? this->close();f1car.destroy() : canvas.requestPaint()}
             }
         }
 
-    }
+    } 
 
         Image {
             id: carImage
