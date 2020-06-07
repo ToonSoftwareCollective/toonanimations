@@ -58,7 +58,7 @@ import QtQuick 2.1
                 return Math.floor(Math.random() * (to - from + 1) + from);
             }
 
-        property int speed: isNxt ? randomNumber(2, 5) : randomNumber(4, 7)
+        property int speed: isNxt ? randomNumber(2, 5) : randomNumber(5, 8)
 
         Timer {
             interval: 50
