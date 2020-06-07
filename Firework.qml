@@ -5,7 +5,10 @@ import QtQuick.Particles 2.1
 
 Item {
 	id: fireworks
-
+	
+	if ({animationscreen.animationRunning === false){this->close();}
+	
+	
 	Rectangle {
 		id: root
 		width: 1024
