@@ -6,7 +6,8 @@ Item {
 
     width: 120
     height: 60
-
+ 
+    if (animationscreen.animationRunning === false){this->close();}
 
     Item {
         id: sprite
