@@ -10,8 +10,8 @@ Item {
 
 	Rectangle {
 		id: root
-		width: root.width
-		height: root.height
+		width: 1024
+		height: 800
 		color: "transparent"
 
 		ParticleSystem {
