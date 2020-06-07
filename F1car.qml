@@ -17,7 +17,13 @@ Item {
         x: carImage.height+100
     	}
 
-  
+  Text {
+	text: "Hello World!"
+	font.family: "Helvetica"
+	font.pointSize: 10
+	color: "red"
+	}
+    //  animationscreen.animationRunning
     SequentialAnimation {
         running: true
         loops: -1
