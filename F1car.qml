@@ -99,10 +99,11 @@ Item {
             }
         }
 	
-	Timer {
+/*	Timer {
         	interval: 1000
         	running: true
         	repeat: true
         	onTriggered: {!animationscreen.animationRunning? f1car.destroy():}
 	}
+*/
     }
