@@ -1,14 +1,13 @@
 //eggs
 import QtQuick 2.1
 
-
         Item {
             id: egg
 
-            width: 161
-            height: 200
+            width: 107
+            height: 132
             x : ((Math.random() * parent.width)-40);
-            y : -200;
+            y : -140;
 
             Item {
                 id: sprite
@@ -26,7 +25,7 @@ import QtQuick 2.1
                 transform: Rotation {
                    id: rotator
                    origin{
-                       x: 60
+                       x: 53
                        y: 110
                     }
                     angle: 0
@@ -49,7 +48,7 @@ import QtQuick 2.1
 
                 Image {
                 id: spriteImage
-                source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/eggs.png"
+                source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/eggs3.png"
                 y: -parent.height*sprite.framey
                 x:-parent.width*sprite.framex
                 }
@@ -59,11 +58,7 @@ import QtQuick 2.1
                 return Math.floor(Math.random() * (to - from + 1) + from);
             }
 
-
-
-
         property int speed: randomNumber(1, 4)
-
 
         Timer {
             interval: 50
