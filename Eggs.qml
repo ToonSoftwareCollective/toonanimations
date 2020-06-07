@@ -2,18 +2,6 @@
 import QtQuick 2.1
 
 
-Item{
-        width: parent.width
-        height: parent.height
-
-        Image {
-            id: bottomImage
-            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/eggs2.png"
-            width: parent.width; height: parent.height
-            anchors {
-                bottom: parent.bottom
-            }
-        }
         Item {
             id: egg
 
@@ -73,7 +61,6 @@ Item{
 
 
 
-}
 
         property int speed: randomNumber(1, 4)
 
@@ -92,5 +79,5 @@ Item{
                    egg.destroy();
                 }
           }
-        }
+         }
 }
