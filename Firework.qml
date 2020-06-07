@@ -97,5 +97,5 @@ Item {
             acceleration: PointDirection {y:  20}
         }
     }
-
+}//rectangle
 }//screen
