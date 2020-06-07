@@ -8,7 +8,7 @@ Item{
 
         Image {
             id: bottomImage
-            source: "https://github.com/ToonSoftwareCollective/toonanimations/blob/master/eggs2.png"
+            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/eggs2.png"
             width: parent.width; height: parent.height
             anchors {
                 bottom: parent.bottom
@@ -61,7 +61,7 @@ Item{
 
                 Image {
                 id: spriteImage
-                source: "https://github.com/ToonSoftwareCollective/toonanimations/blob/master/eggs.png"
+                source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/eggs.png"
                 y: -parent.height*sprite.framey
                 x:-parent.width*sprite.framex
                 }
