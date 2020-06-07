@@ -15,16 +15,7 @@ Item {
         width: parent.height
         clip: true
         x: carImage.height+100
-	
-	Text {
-		text: "Hello World!"
-		font.family: "Helvetica"
-		font.pointSize: 10
-		color: "red"
-	}
-    //  animationscreen.animationRunning
-    
-    	}
+    }
 
 
     SequentialAnimation {
@@ -108,11 +99,13 @@ Item {
             }
         }
 	
-/*	Timer {
+	Timer {
         	interval: 1000
         	running: true
         	repeat: true
-        	onTriggered: {!animationscreen.animationRunning? f1car.destroy():}
+        	onTriggered: {
+			!animationscreen.animationRunning? f1car.destroy():
+		}
 	}
-*/
+
     }
