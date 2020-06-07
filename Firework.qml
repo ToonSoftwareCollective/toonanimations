@@ -19,21 +19,21 @@ Item {
 		}
 
 		ImageParticle {
-			source: "particle.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/particle.png"
 			system: particlesSystem
 			color: "red"
 			groups: ["A"]
 		}
 
 		ImageParticle {
-			source: "smoke_particle.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/smoke_particle.png"
 			system: particlesSystem
 			groups: ["B"]
 			color: "white"
 		}
 
 		ImageParticle {
-			source: "smoke_particle.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/smoke_particle.png"
 			system: particlesSystem
 			groups: ["C"]
 			color: "red"
