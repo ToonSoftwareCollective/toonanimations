@@ -79,7 +79,7 @@ Item {
                     y: carImage.height+50
 
                 }
-                onChanged:     {!animationscreen.animationRunning? this->close();f1car.destroy() : canvas.requestPaint()}
+                onChanged:    canvas.requestPaint()
             }
         }
 
@@ -98,4 +98,11 @@ Item {
                 onClicked: {animationscreen.animationRunning= false;f1car.destroy()}
             }
         }
+	
+	Timer {
+        	interval: 1000
+        	running: true
+        	repeat: true
+        	onTriggered: {!animationscreen.animationRunning? f1car.destroy():}
+	}
     }
