@@ -104,7 +104,7 @@ Item {
         	running: true
         	repeat: true
         	onTriggered: {
-			if (banimationscreen.animationRunning==false) {
+			if (animationscreen.animationRunning==false) {
                 		f1car.destroy();
             		}
 		}
