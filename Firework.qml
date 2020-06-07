@@ -10,8 +10,8 @@ Item {
 		id: root
 		//width: isNxt? 1024 : 800
 		//height: isNxt? 600 : 480
-		width:  800
-		height:  480
+		width:  1024
+		height:  600
 		color: "transparent"
 
 		ParticleSystem {
