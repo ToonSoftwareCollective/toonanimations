@@ -12,7 +12,7 @@ Item {
     Item {
         id: sprite
         property int frame: 0
-        property string pngname : "fire" + randomNumber(1, 4) + ".png"
+        property string pngname : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/fire" + randomNumber(1, 4) + ".png"
 
         anchors.centerIn: parent
 
@@ -38,7 +38,6 @@ Item {
 
         Image {
             id: spriteImage
-            //source: "fire1.png"
             source: sprite.pngname
             y: 0
             x: -154*sprite.frame
