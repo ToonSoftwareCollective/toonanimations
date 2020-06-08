@@ -20,7 +20,6 @@ Item {
         width: parent.height
         clip: true
 
-        //property int newheight: 100 + (explodeheight*50)
         SequentialAnimation {
             id: move
             NumberAnimation { target: firework; property: "y"; to: 400 - (explodeheight*50); duration: 100 }
