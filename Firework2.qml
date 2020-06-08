@@ -1,6 +1,6 @@
 import QtQuick 2.0
 Item {
-    id: fireworks
+    id: firework
 
     property bool destroyed: false
 
