@@ -10,7 +10,7 @@ Item {
     width:250
     height:250
     x:-140
-    y: 200
+    y: isNxt? 200:150
 
 
     Item {
@@ -53,7 +53,7 @@ Item {
            return Math.floor(Math.random() * (to - from + 1) + from);
         }
 
-    property int speed: randomNumber(3, 6)
+    property int speed: isNxt? randomNumber(3, 6) : randomNumber(4, 7)
 
     Timer {
         interval: 400
