@@ -24,7 +24,7 @@ Item {
 
     ParallelAnimation {
             id: walk
-            NumberAnimation { target: heart; property: "x"; to: (x+(5*speed)); duration: isNxt? 100 : 200}
+            NumberAnimation { target: heart; property: "x"; to: (x+(5*speed)); duration: 100}
         }
 
         Timer {
@@ -42,7 +42,7 @@ Item {
 
         Image {
             id: spriteImage
-            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart4.png"
+            source:  isNxt? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart4.png" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart5.png"
             height:250
             y:0
             x:-250*sprite.framex-3
