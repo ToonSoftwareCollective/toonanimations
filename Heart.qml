@@ -30,7 +30,7 @@ Item {
         Timer {
             running: true
             repeat: true
-            interval: 50
+            interval: isNxt? 50:100
             onTriggered: {
             walk.restart();
             sprite.framex++;
