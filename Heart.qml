@@ -30,7 +30,7 @@ Item {
         Timer {
             running: true
             repeat: true
-            interval:  50
+            interval:  75
             onTriggered: {
             walk.restart();
             sprite.framex++;
@@ -53,7 +53,7 @@ Item {
            return Math.floor(Math.random() * (to - from + 1) + from);
         }
 
-    property int speed: isNxt? randomNumber(3, 6) : 5
+    property int speed: isNxt? randomNumber(3, 6) : 3
 
     Timer {
         interval: 400
