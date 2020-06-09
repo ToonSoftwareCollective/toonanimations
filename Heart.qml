@@ -42,7 +42,7 @@ Item {
 
         Image {
             id: spriteImage
-            source: "heart4.png"
+            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart4.png"
             height:250
             y:0
             x:-250*sprite.framex-3
