@@ -10,7 +10,7 @@ Item {
     width:250
     height:250
     x:-200
-    y: isNxt? 200:150
+    y: isNxt? 200:100
 
 
     Item {
