@@ -16,8 +16,8 @@ Item {
     Item {
         id: sprite
         anchors.centerIn: parent
-        height: 250
-        width: 250
+        height: isNxt? 250 : 125
+        width: isNxt? 250 : 125
         clip: true
         y: parent.height
         property int framex: 0
@@ -43,9 +43,9 @@ Item {
         Image {
             id: spriteImage
             source:  isNxt? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart4.png" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart5.png"
-            height:250
+            height: isNxt? 250 : 125
             y:0
-            x:-250*sprite.framex-3
+            x: isNxt? -250*sprite.framex-3 : -125*sprite.framex-3
         }
     }
 
