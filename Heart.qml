@@ -24,7 +24,7 @@ Item {
 
     ParallelAnimation {
             id: walk
-            NumberAnimation { target: heart; property: "x"; to: (x+(5*speed)); duration: 100 }
+            NumberAnimation { target: heart; property: "x"; to: (x+(5*speed)); duration: isNxt? 100 : 200}
         }
 
         Timer {
