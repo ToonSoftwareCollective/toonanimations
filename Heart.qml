@@ -9,7 +9,7 @@ Item {
 
     width:250
     height:250
-    x:-140
+    x:-200
     y: isNxt? 200:150
 
 
@@ -30,7 +30,7 @@ Item {
         Timer {
             running: true
             repeat: true
-            interval: isNxt? 50:200
+            interval: isNxt? 50:75
             onTriggered: {
             walk.restart();
             sprite.framex++;
