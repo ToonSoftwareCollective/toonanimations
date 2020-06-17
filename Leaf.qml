@@ -9,15 +9,11 @@ Item {
     x :((Math.random() * parent.width)-60)
     y : -300
 
-
-
     Item {
         id: sprite
         property int framex: randomNumber(0, 6)
         property int framey: randomNumber(0, 5)
-        //property int colornumber: randomNumber(1, 4)
         property string pngname : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/leaf-" + randomNumber(1, 10) + ".png"
-
 
         anchors.centerIn: parent
 
@@ -54,7 +50,6 @@ Item {
 
         Image {
             id: spriteImage
-            //source: "leaf-1.png"
             source: sprite.pngname
             y:-parent.height*sprite.framey
             x:-parent.width*sprite.framex
@@ -66,7 +61,7 @@ Item {
        return Math.floor(Math.random() * (to - from + 1) + from);
     }
 
-    property int speed: randomNumber(3, 6)
+    property int speed: isNxt? randomNumber(3, 6) : randomNumber(5, 8)
 
     Timer {
         interval: 75
