@@ -3,22 +3,27 @@ Item {
     id: leaf
 
     property bool destroyed: false
+    property int leafsize: randomNumber(5, 10)
 
-    width: 160
-    height: 160
+    width: leafsize *16
+    height: leafsize *16
     x :((Math.random() * parent.width)-60)
     y : -300
+
+
 
     Item {
         id: sprite
         property int framex: randomNumber(0, 6)
         property int framey: randomNumber(0, 5)
-        property string pngname : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/leaf-" + randomNumber(1, 10) + ".png"
+        //property int colornumber: randomNumber(1, 4)
+        property string pngname : "leaf-" + randomNumber(1, 10) + ".png"
+
 
         anchors.centerIn: parent
 
-        height: parent.height
-        width: parent.height
+        height: leafsize *16
+        width: leafsize *16
         clip: true
 
         transform: Rotation {
@@ -50,9 +55,12 @@ Item {
 
         Image {
             id: spriteImage
+            //source: "leaf-1.png"
             source: sprite.pngname
-            y:-parent.height*sprite.framey
-            x:-parent.width*sprite.framex
+            y:-160 * leafsize/10*sprite.framey
+            x:-160 * leafsize/10*sprite.framex
+            width: 960 * leafsize/10
+            height:800 * leafsize/10
         }
     }
 
