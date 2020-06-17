@@ -16,7 +16,7 @@ Item {
         property int framex: randomNumber(0, 6)
         property int framey: randomNumber(0, 5)
         //property int colornumber: randomNumber(1, 4)
-        property string pngname : "leaf-" + randomNumber(1, 10) + ".png"
+        property string pngname : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/leaf-" + randomNumber(1, 10) + ".png"
 
 
         anchors.centerIn: parent
