@@ -69,10 +69,10 @@ Item {
        return Math.floor(Math.random() * (to - from + 1) + from);
     }
 
-    property int speed: isNxt? randomNumber(3, 6) : randomNumber(5, 8)
-
+    property int speed: isNxt?  randomNumber(4, 7) : randomNumber(5, 8)
+    
     Timer {
-        interval: 75
+        interval: speed*15
         running: true
         repeat: true
 
@@ -87,6 +87,10 @@ Item {
                sprite.framey=0
             }
 
+
+            if (isNxt && (leaf.y  <  -300)) {
+               leaf.destroy();
+            }
 
             if (isNxt && (leaf.y  >  600)) {
                leaf.destroy();
