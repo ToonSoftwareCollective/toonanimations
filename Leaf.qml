@@ -16,7 +16,7 @@ Item {
         id: sprite
         property int framex: randomNumber(0, 6)
         property int framey: randomNumber(0, 5)
-        property string pngname : isNxt?  "leaf-" + randomNumber(1, 10) + ".png" : "leaf-" + randomNumber(1, 5) + ".png"
+        property string pngname : isNxt?  "leaf-" + randomNumber(1, 11) + ".png" : "leaf-" + randomNumber(1, 5) + ".png"
 
 
         anchors.centerIn: parent
