@@ -3,7 +3,7 @@ Item {
     id: leaf
 
     property bool destroyed: false
-    property int leafsize: randomNumber(5, 10)
+    property int leafsize: isNxt? randomNumber(5, 10) : randomNumber(5, 8)
 
     width: leafsize *16
     height: leafsize *16
@@ -16,8 +16,7 @@ Item {
         id: sprite
         property int framex: randomNumber(0, 6)
         property int framey: randomNumber(0, 5)
-        //property int colornumber: randomNumber(1, 4)
-        property string pngname : "leaf-" + randomNumber(1, 10) + ".png"
+        property string pngname : isNxt?  "leaf-" + randomNumber(1, 10) + ".png" : "leaf-" + randomNumber(1, 5) + ".png"
 
 
         anchors.centerIn: parent
@@ -36,7 +35,6 @@ Item {
              angle: 180
         }
         ParallelAnimation {
-        //SequentialAnimation {
             id: shake
             PropertyAnimation { easing.type: Easing.InQuad; duration: 400; target: rotator; property: "angle"; to: rotator.angle+randomNumber(-30, 30) }
             NumberAnimation { target: leaf; property: "y"; to: (leaf.y + leaf.speed*Math.floor(10*Math.sin((rotator.angle-90)*Math.PI/180))); duration: 400 }
@@ -55,7 +53,6 @@ Item {
 
         Image {
             id: spriteImage
-            //source: "leaf-1.png"
             source: sprite.pngname
             y:-160 * leafsize/10*sprite.framey
             x:-160 * leafsize/10*sprite.framex
