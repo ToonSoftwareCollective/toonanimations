@@ -16,8 +16,8 @@ Item {
         id: sprite
         property int framex: randomNumber(0, 6)
         property int framey: randomNumber(0, 5)
-        property string pngname : isNxt?  "leaf-" + randomNumber(1, 11) + ".png" : "leaf-" + randomNumber(1, 5) + ".png"
-
+        //property string pngname : isNxt?  "leaf-" + randomNumber(1, 11) + ".png" : "leaf-" + randomNumber(1, 5) + ".png"
+        property string pngname :  "leaf-" + randomNumber(1, 11) + ".png" 
 
         anchors.centerIn: parent
 
@@ -66,10 +66,11 @@ Item {
        return Math.floor(Math.random() * (to - from + 1) + from);
     }
 
-    property int speed: isNxt?  randomNumber(4, 7) : randomNumber(5, 8)
+    property int speed: isNxt?  randomNumber(4, 7) : randomNumber(10, 15)
+    property int speed2: isNxt?  randomNumber(4, 7) : randomNumber(6, 9)
     
     Timer {
-        interval: speed*15
+        interval: speed2*15
         running: true
         repeat: true
 
