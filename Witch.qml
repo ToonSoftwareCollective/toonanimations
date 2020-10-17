@@ -35,7 +35,7 @@ Item {
         Timer {
             running: true
             repeat: true
-            interval: 50
+            interval: 100
             onTriggered: {
                 fly.restart();
                 sprite.framex++;
@@ -58,7 +58,7 @@ Item {
            return Math.floor(Math.random() * (to - from + 1) + from);
         }
 
-    property int speed: randomNumber(3, 6)
+    property int speed: randomNumber(5, 10)
 
     Timer {
         interval: 400
