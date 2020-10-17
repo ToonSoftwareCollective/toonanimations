@@ -78,15 +78,15 @@ Item {
                witch.destroy();
             }
 
-            if (isNxt && (witch.x - witch.width > 1024)) {
+            if (isNxt && (witch.x - witch.width > 1070)) {
                witch.destroy();
             }
 
-            if (!isNxt && (witch.x - witch.width > 600)) {
+            if (!isNxt && (witch.x - witch.width > 660)) {
                witch.destroy();
             }
 
-            if (witch.x + witch.width < -30) {
+            if (witch.x + witch.width < -80) {
                witch.destroy();
             }
 
