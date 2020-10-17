@@ -11,7 +11,7 @@ Item {
     property int yesno:  randomNumber(0, 1)
     property bool righttoleft: (yesno==1)? true:false
     x: righttoleft?  (parent.width + 200) :-300
-    y :(Math.random()*(parent.height-200))
+    y : isNxt? (Math.random()*(parent.height-200)) : randomNumber(190, 290)
     property int angle:  randomNumber(-1, 1)
 
 
@@ -58,7 +58,7 @@ Item {
            return Math.floor(Math.random() * (to - from + 1) + from);
         }
 
-    property int speed: randomNumber(5, 10)
+    property int speed: isNxt? randomNumber(5, 10) : randomNumber(7, 10)
 
     Timer {
         interval: 400
