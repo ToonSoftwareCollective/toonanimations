@@ -11,7 +11,7 @@ Item {
     property int yesno:  randomNumber(0, 1)
     property bool righttoleft: (yesno==1)? true:false
     x: righttoleft?  (parent.width + 200) :-300
-    y : isNxt? randomNumber(0, 400) : randomNumber(0, 280)
+    y : isNxt? randomNumber(0, 400) : randomNumber(0, 200)
     property int angle:  randomNumber(-1, 1)
 
 
