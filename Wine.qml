@@ -54,7 +54,7 @@ Item {
 		return Math.floor(Math.random() * (to - from + 1) + from);
     }
 
-	property int speed: isNxt ? randomNumber(3, 5) : randomNumber(3, 6)
+	property int speed: isNxt ? randomNumber(3, 6) : randomNumber(3, 6)
 
 
     Timer {
