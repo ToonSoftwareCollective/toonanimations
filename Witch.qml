@@ -20,6 +20,7 @@ Item {
         id: sprite
         anchors.centerIn: parent
         width: parent.height
+        height: parent.height
         clip: true
         y: parent.height
         property int framex: randomNumber(0, 9)
