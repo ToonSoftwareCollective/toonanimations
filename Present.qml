@@ -8,34 +8,6 @@ Item{
     width: parent.width
     height: parent.height
 
-    Image {
-        id: bottomImage
-        source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/zak2.png"
-        width: 133*botpictSize*1.1
-        height: 137*botpictSize*1.1
-        anchors {
-            left: parent.left
-            bottom: parent.bottom
-            leftMargin: isNxt? -30: -30
-            bottomMargin: isNxt?-10: -10
-        }
-    }
-
-    Image {
-        id: bottomImage2
-        source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/zak1.png"
-        width: 149*botpictSize
-        height:  200*botpictSize
-        anchors {
-            right: parent.right
-            bottom: parent.bottom
-            rightMargin: isNxt? -30 : -30
-            bottomMargin: isNxt?-10 :-10
-        }
-    }
-
-
-
 Item {
     id: present
 
