@@ -1,7 +1,6 @@
 import QtQuick 2.0
 
 Item{
-    property bool isNxt: balloonScreen.isNxt
     property real botpictSize: isNxt? 1.1: 1  //size of bottom pictures
     property int speed: isNxt? randomNumber(2, 3) : randomNumber(4, 7)
     property int rotation: randomNumber(3, 10) //maximum rotoation of the presents
@@ -11,20 +10,20 @@ Item{
 
     Image {
         id: bottomImage
-        source: "zak2.png"
+        source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/zak2.png"
         width: 133*botpictSize*1.1
         height: 137*botpictSize*1.1
         anchors {
             left: parent.left
             bottom: parent.bottom
-            leftMargin: isNxt?-30: -30
+            leftMargin: isNxt? -30: -30
             bottomMargin: isNxt?-10: -10
         }
     }
 
     Image {
         id: bottomImage2
-        source: "zak1.png"
+        source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/zak1.png"
         width: 149*botpictSize
         height:  200*botpictSize
         anchors {
@@ -84,7 +83,7 @@ Item {
 
         Image {
             id: spriteImage
-            source: "Present.png"
+            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Present.png"
 
             x:-267 * presentsize/10*sprite.framex
             y:-152 * presentsize/10*sprite.framey
