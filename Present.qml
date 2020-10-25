@@ -1,6 +1,7 @@
 import QtQuick 2.0
 
 Item{
+     id: presentscreen
     property real botpictSize: isNxt? 1.1: 1  //size of bottom pictures
     property int speed: isNxt? randomNumber(2, 3) : randomNumber(4, 7)
     property int rotation: randomNumber(3, 10) //maximum rotoation of the presents
