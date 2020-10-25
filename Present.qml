@@ -1,17 +1,10 @@
 import QtQuick 2.0
 
-Item{
-     id: presentscreen
-    property real botpictSize: isNxt? 1.1: 1  //size of bottom pictures
-    property int speed: isNxt? randomNumber(2, 3) : randomNumber(4, 7)
-    property int rotation: randomNumber(3, 10) //maximum rotoation of the presents
-    property int presentsize: isNxt? randomNumber(4,10) : randomNumber(4,10) //size of dropping presents
-    width: parent.width
-    height: parent.height
-
 Item {
     id: present
-
+     property int speed: isNxt? randomNumber(2, 3) : randomNumber(4, 7)
+    property int rotation: randomNumber(3, 10) //maximum rotoation of the presents
+    property int presentsize: isNxt? randomNumber(4,10) : randomNumber(4,10) //size of dropping presents
     width: presentsize * 267/10
     height: presentsize * 152/10
     x :((Math.random() * parent.width)-60)
@@ -84,5 +77,4 @@ Item {
             }
         }
     }
-}
 }
