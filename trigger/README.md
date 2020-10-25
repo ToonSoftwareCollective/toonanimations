@@ -8,7 +8,7 @@ voorbeeld:
 waarbij animationtype is een van de animaties uit de file toonanimations/nameindex.json  en animationmode kan zijn "Start", "Stop" of iets anders.  Let op alles is 
 hoofdlettergevoelig.
 
-Huidige animaties : Balloon, Roach, Leaf, F1car, Icecream, Firework, Firework2, Santa, Heart, Confetti, Wine, Snow, Butterfly, Roach2, Rabbit, Eggs
+Huidige animaties : Balloon, Roach, Leaf, F1car, Icecream, Firework, Firework2, Santa, Heart, Confetti, Wine, Snow, Butterfly, Roach2, Rabbit, Eggs, Present
 
 Zodra als dat een "Start" wordt ontvangen wordt de bijbehoorende animatie geladen met de bijbehorende parameters als gedefineerd in animatienaam.json uit 
 /toonanimations
