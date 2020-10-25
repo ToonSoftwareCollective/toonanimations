@@ -2,7 +2,6 @@ import QtQuick 2.0
 
 Item {
     id: present
-     property int speed: isNxt? randomNumber(2, 3) : randomNumber(4, 7)
     property int rotation: randomNumber(3, 10) //maximum rotoation of the presents
     property int presentsize: isNxt? randomNumber(4,10) : randomNumber(4,10) //size of dropping presents
     width: presentsize * 267/10
@@ -62,6 +61,8 @@ Item {
        return Math.floor(Math.random() * (to - from + 1) + from);
     }
 
+    property int speed: isNxt? randomNumber(2, 3) : randomNumber(4, 7)
+    
     Timer {
         interval: 50
         running: true
