@@ -2,6 +2,6 @@
  "Toon1time": 8000, 
  "Toon2time": 6000, 
  "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Present.qml", 
- "staticImageT1" : "https://github.com/ToonSoftwareCollective/toonanimations/blob/master/sint_T1.png", 
- "staticImageT2" : "https://github.com/ToonSoftwareCollective/toonanimations/blob/master/sint_T2.png",
+ "staticImageT1" : "sint_T1.png", 
+ "staticImageT2" : "sint_T2.png",
  "visibleindimstate" : "yes"}
