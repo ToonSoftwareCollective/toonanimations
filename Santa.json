@@ -1,1 +1,7 @@
-{"mode": "Start", "Toon1time": 14000, "Toon2time": 10000, "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Santa.qml","visibleindimstate" : "yes"}
+{"mode": "Start", 
+"Toon1time": 14000, 
+"Toon2time": 10000, 
+"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Santa.qml",
+ "staticImageT1" : "", 
+ "staticImageT2" : "",
+"visibleindimstate" : "yes"}

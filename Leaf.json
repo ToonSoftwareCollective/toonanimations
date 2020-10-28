@@ -1,1 +1,7 @@
-{"mode": "Start", "Toon1time": 11000, "Toon2time": 2000, "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Leaf.qml","isvisibleindimstate" : "yes"}
+{"mode": "Start", 
+"Toon1time": 11000, 
+"Toon2time": 2000, 
+"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Leaf.qml",
+ "staticImageT1" : "", 
+ "staticImageT2" : "",
+"isvisibleindimstate" : "yes"}

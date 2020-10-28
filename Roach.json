@@ -1,1 +1,7 @@
-{"mode": "Start", "Toon1time": 7000, "Toon2time": 2700, "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Roach.qml","visibleindimstate" : "no"}
+{"mode": "Start", 
+"Toon1time": 7000, 
+"Toon2time": 2700, 
+"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Roach.qml",
+ "staticImageT1" : "", 
+ "staticImageT2" : "",
+"visibleindimstate" : "no"}

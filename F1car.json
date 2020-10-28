@@ -1,1 +1,7 @@
-{"mode": "Start", "Toon1time": 28800000, "Toon2time": 28800000, "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/F1car.qml","visibleindimstate" : "yes"}
+{"mode": "Start", 
+"Toon1time": 28800000, 
+"Toon2time": 28800000, 
+"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/F1car.qml",
+ "staticImageT1" : "", 
+ "staticImageT2" : "",
+"visibleindimstate" : "yes"}

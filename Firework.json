@@ -1,1 +1,7 @@
-{"mode": "Start", "Toon1time": 3600000, "Toon2time": 3600000, "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Firework.qml","visibleindimstate" : "yes"}
+{"mode": "Start", 
+"Toon1time": 3600000, 
+"Toon2time": 3600000, 
+"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Firework.qml",
+ "staticImageT1" : "", 
+ "staticImageT2" : "",
+"visibleindimstate" : "yes"}

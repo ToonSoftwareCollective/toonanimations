@@ -1,1 +1,7 @@
-{"mode": "Start", "Toon1time": 15000, "Toon2time": 3500, "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Witch.qml","visibleindimstate" : "yes"}
+{"mode": "Start", 
+"Toon1time": 15000, 
+"Toon2time": 3500, 
+"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Witch.qml",
+ "staticImageT1" : "", 
+ "staticImageT2" : "",
+"visibleindimstate" : "yes"}
