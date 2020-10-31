@@ -24,7 +24,7 @@ Voorbeeld:
 vuurwerk weergeven op de Toon
 
 1.  Edit de triggerfile naar {"animationtype":"Firework","animationmode":"Start"}  en sla deze op
-2.  Na de verversing van github (Raw) en het pollen van de toon zal voorwerk worden weergegeven op het schwerm van de gebruiker.
+2.  Na de verversing van github (Raw) en het pollen van de toon zal vuurwerk worden weergegeven op het scherm van de gebruiker.
 3.  Na 6-10 minuten dien de triggerfile te worden aangepast in {"animationtype":"Firework","animationmode":"blabla"} . De gebruiker kan de animatie stoppen via de app door op stop te klikken.
 4.  Nadat TSC besluit de animatie op afstand te stoppen kan het commando {"animationtype":"Balloon","animationmode":"Stop"} worden gegeven. Alle animaties op de toon stoppen (ook de Firework).
 5.  Na 6-10 minuten dien de triggerfile te worden aangepast in {"animationtype":"Firework","animationmode":"blabla"} . De gebruiker kan zelf een animatie starten door in de app op start te klikken
