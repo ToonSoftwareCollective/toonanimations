@@ -1,0 +1,1 @@
+AFC Ajax:Ajax;PSV:PSV;AZ Alkmaar:AZ;Feyenoord:Feyenoord;FC Utrecht:Utrecht;sc Heerenveen:Heerenveen;Willem II:Willem;Vitesse Arnhem:Vitesse;FC Twente:Twente;FC Groningen:Groningen;PEC Zwolle:PEC;Fortuna Sittard:Fortuna;Sparta Rotterdam:Sparta;FC Emmen:Emmen;ADO Den Haag:ADO;Heracles Almelo:Heracles;VVV-Venlo:VVV;RKC Waalwijk:RKC
