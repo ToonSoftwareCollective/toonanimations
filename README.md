@@ -18,3 +18,7 @@ animationscreen.isVisibleinDimState= "show in dimmed state true or false"<br>
 
 To stop from an app:<br>
 animationscreen.animationRunning= false     this command will stop ALL running animations
+
+<b>To send a signal from one app to another app:</b>
+<br>
+animationscreen.animationsSignal(string appName, string 	animationSignalString) where appName is the name of the receiveing app and animationSignalString is the string (or json) to send to the receiving app
