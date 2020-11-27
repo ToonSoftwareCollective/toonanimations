@@ -6,4 +6,5 @@
  "staticImageT2" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spider_T2.png",
  "staticImageT1dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spider_dim_T1.png", 
  "staticImageT2dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spider_dim_T2.png",
+ "hideLogo" : "true",
 "visibleindimstate" : "yes"}
