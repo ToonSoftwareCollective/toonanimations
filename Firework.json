@@ -4,4 +4,6 @@
 "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Firework.qml",
  "staticImageT1" : "", 
  "staticImageT2" : "",
+ "staticImageT1dim" : "", 
+ "staticImageT2dim" : "",
 "visibleindimstate" : "yes"}
