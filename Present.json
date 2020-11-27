@@ -4,4 +4,6 @@
  "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Present.qml", 
  "staticImageT1" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/sint_T1.png", 
  "staticImageT2" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/sint_T2.png",
+ "staticImageT1dim" : "", 
+ "staticImageT2dim" : "",
  "visibleindimstate" : "yes"}
