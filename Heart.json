@@ -4,4 +4,6 @@
 "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Heart.qml",
  "staticImageT1" : "", 
  "staticImageT2" : "",
+ "staticImageT1dim" : "", 
+ "staticImageT2dim" : "",
 "visibleindimstate" : "yes"}
