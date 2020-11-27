@@ -4,4 +4,7 @@
 "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Santa.qml",
  "staticImageT1" : "", 
  "staticImageT2" : "",
+ "staticImageT1dim" : "", 
+ "staticImageT2dim" : "",
+ "hideLogo" : "false",
 "visibleindimstate" : "yes"}
