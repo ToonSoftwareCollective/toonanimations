@@ -1,1 +1,1 @@
-Ajax;Willem;AZ;Feyenoord;PSV
+ajax;willem;;psv;az;feyenoord
