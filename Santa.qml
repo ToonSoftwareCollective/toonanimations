@@ -57,11 +57,11 @@ Item {
         running: true
         repeat: true
         onTriggered: {
-            if (!isNxt && (santa.y - santa.height > 480)) {
-                   santa.destroy();
+            if (!isNxt && (santa.x - santa.width > 660)) {
+               santa.destroy();
             }
-
-            if (isNxt && (santa.x - santa.width > 1024)) {
+	    
+            if (isNxt && (santa.x - santa.width > 1070)) {
                santa.destroy();
             }
 
