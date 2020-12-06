@@ -2,9 +2,9 @@
 "Toon1time": 14000, 
 "Toon2time": 10000, 
 "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Santa.qml",
- "staticImageT1" : "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/Christmas_T1.png", 
- "staticImageT2" : "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/Christmas_T2.png",
- "staticImageT1dim" : "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/Christmas_T1.png", 
- "staticImageT2dim" : "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/Christmas_T2.png",
+ "staticImageT1" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/christmas_T1.png", 
+ "staticImageT2" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/christmas_T2.png",
+ "staticImageT1dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/christmas_T1.png", 
+ "staticImageT2dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/christmas_T2.png",
  "hideLogo" : "false",
 "visibleindimstate" : "yes"}
