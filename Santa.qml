@@ -57,15 +57,15 @@ Item {
         running: true
         repeat: true
         onTriggered: {
-            if (!isNxt && (santa.x - santa.width > 660)) {
+            if (!isNxt && (santa.x - santa.width > 810)) {
                santa.destroy();
             }
 	    
-            if (isNxt && (santa.x - santa.width > 1070)) {
+            if (isNxt && (santa.x - santa.width > 1100)) {
                santa.destroy();
             }
 
-            if (santa.x + santa.width < -80) {
+            if (santa.x + santa.width < -100) {
                            santa.destroy();
             }
         }
