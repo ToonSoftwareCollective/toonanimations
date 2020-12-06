@@ -7,7 +7,7 @@ Item {
     property bool destroyed: false
     property int yesno:  randomNumber(0, 1)
     property bool righttoleft: (yesno==1)? true:false
-    x: righttoleft?  (parent.width + 60) :-60
+    x: righttoleft?  (parent.width + 100) :-100
 
     width: 120
     height: 120
