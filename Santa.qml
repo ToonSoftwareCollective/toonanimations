@@ -4,12 +4,13 @@ import QtQuick 2.1
 
 Item {
     id: santa
-
     property bool destroyed: false
+    property int yesno:  randomNumber(0, 1)
+    property bool righttoleft: (yesno==1)? true:false
+    x: righttoleft?  (parent.width + 100) :-100
 
     width: 120
     height: 120
-    x: -60
     y: parent.height - 108
 
     Item {
@@ -19,11 +20,11 @@ Item {
 		height: parent.height
         width: parent.height
         clip: true
-	y: parent.height
-  
-	ParallelAnimation {
-            id: walk
-            NumberAnimation { target: santa; property: "x"; to: (x+50); duration: 200 }
+        y: parent.height
+
+        ParallelAnimation {
+                id: walk
+                NumberAnimation { target: santa; property: "x"; to: righttoleft? (x-50): (x+50); duration: 200 }
         }
 
         Timer {
@@ -31,21 +32,24 @@ Item {
             repeat: true
             interval: 200
             onTriggered: {
-            walk.restart();
-	    if (sprite.frame == 11) {
-		sprite.frame = 0
+                walk.restart();
+                if (sprite.frame == 11) {
+                    sprite.frame = 0
+                 }
+                 sprite.frame++;
             }
-            sprite.frame++;
-
         }
-}
 
         Image {
-		id: spriteImage
-		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/SantaSprites2.png"
-		y:0
-		x:-parent.width*sprite.frame
+            id: spriteImage
+            source: righttoleft? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/SantaSprites1.png" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/SantaSprites2.png"
+            y:0
+            x:-parent.width*sprite.frame
         }
+    }
+    
+    function randomNumber(from, to) {
+        return Math.floor(Math.random() * (to - from + 1) + from);
     }
 
     Timer {
@@ -53,16 +57,19 @@ Item {
         running: true
         repeat: true
         onTriggered: {
-
-	    if (!isNxt && (santa.y - santa.height > 480)) {
+            if (!isNxt && (santa.x - santa.width > 810)) {
+               santa.destroy();
+            }
+	    
+            if (isNxt && (santa.x - santa.width > 1100)) {
                santa.destroy();
             }
 
-            if (isNxt && (santa.x - santa.width > 1024)) {
-               santa.destroy();
+            if (santa.x + santa.width < -100) {
+                           santa.destroy();
             }
-
         }
     }
 
 }
+
