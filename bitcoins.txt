@@ -1,1 +1,1 @@
-bitcoin;ethereum;tether;polkadot-new;cardano;Litecoin;usd-coin
+bitcoin;ethereum;tether;polkadot-new;cardano;Litecoin;xrp;bitcoin-cash;chainlink;stellar
