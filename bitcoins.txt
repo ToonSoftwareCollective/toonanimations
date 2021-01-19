@@ -1,1 +1,1 @@
-bitcoin;ethereum;tether;polkadot-new;cardano;Litecoin
+bitcoin;ethereum;tether;polkadot-new;cardano;Litecoin;usd-coin
