@@ -15,7 +15,7 @@ Item {
         id: sprite
         property int framex: randomNumber(0, 9)
         property int framey: randomNumber(1, 3)
-        property string pngname : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Butterfly" + randomNumber(1, 4) + ".png"
+        property string pngname : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Butterfly" + randomNumber(1, 4) + ".png"
 
         anchors.centerIn: parent
 

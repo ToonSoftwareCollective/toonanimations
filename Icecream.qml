@@ -47,7 +47,7 @@ Item {
 
         Image {
             id: spriteImage
-            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Icecream.png"
+            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Icecream.png"
             y:-120 * icesize/5*sprite.framey
             x:-120 * icesize/5*sprite.framex
             width: 960 *  icesize/5

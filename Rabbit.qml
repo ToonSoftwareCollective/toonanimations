@@ -48,7 +48,7 @@ Item {
 
         Image {
         id: spriteImage
-        source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/rabbit.png"
+        source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/rabbit.png"
         y:-107 *sprite.framey
         x:-125*sprite.framex
         }

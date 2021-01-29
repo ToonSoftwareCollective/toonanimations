@@ -53,7 +53,7 @@ Item {
 
         Image {
 			id: spriteImage
-			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/RoachSprites.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/RoachSprites.png"
 			y:0
 			x:-parent.width*sprite.frame
         }

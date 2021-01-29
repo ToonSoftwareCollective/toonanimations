@@ -50,7 +50,7 @@ Item {
 
 		Image {
 			id: spriteImage
-			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Present.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Present.png"
 
 			x:-267 * presentsize/10*sprite.framex
 			y:-152 * presentsize/10*sprite.framey

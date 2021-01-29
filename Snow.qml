@@ -47,7 +47,7 @@ Item {
 
         Image {
 		id: spriteImage
-		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Snow.png"
+		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Snow.png"
 		y:0
 		x:0
         }

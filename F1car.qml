@@ -87,7 +87,7 @@ Item {
 
         Image {
             id: carImage
-            source: "f1rb.png"
+            source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/f1rb.png"
 	    y:0
             x:0
             height:60

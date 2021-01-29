@@ -47,7 +47,7 @@ Item {
 
         Image {
 			id: spriteImage
-			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Balloon4SpriteSheet.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Balloon4SpriteSheet.png"
 			y:0
 			x:-parent.width*sprite.frame
         }

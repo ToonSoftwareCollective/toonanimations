@@ -48,7 +48,7 @@ import QtQuick 2.1
 
                 Image {
                 id: spriteImage
-                source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/eggs3.png"
+                source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/eggs3.png"
                 y: -parent.height*sprite.framey
                 x:-parent.width*sprite.framex
                 }

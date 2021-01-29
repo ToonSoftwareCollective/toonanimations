@@ -44,7 +44,7 @@ Item {
 
         Image {
 		id: spriteImage
-		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Wine.png"
+		source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Wine.png"
 		y:0
 		x:-parent.width*sprite.frame        
 	}

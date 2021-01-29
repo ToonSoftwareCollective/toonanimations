@@ -47,7 +47,7 @@ Item {
 
         Image {
         id: spriteImage
-        source: righttoleft? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Witch2.png": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Witch.png"
+        source: righttoleft? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Witch2.png": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Witch.png"
         x:-300 * witchsize/5 * sprite.framex
         width: 3588 *  witchsize/5
         height:212 * witchsize/5
