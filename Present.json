@@ -1,7 +1,7 @@
 {"mode": "Start", 
  "Toon1time": 10000, 
  "Toon2time": 7000, 
- "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Present.qml", 
+ "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Present.qml", 
  "staticImageT1" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/sint_T1.png", 
  "staticImageT2" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/sint_T2.png",
  "staticImageT1dim" : "", 

@@ -1,7 +1,7 @@
 {"mode": "Start", 
 "Toon1time": 10000, 
 "Toon2time": 4500, 
-"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/Balloon.qml",
+"component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Balloon.qml",
  "staticImageT1" : "", 
  "staticImageT2" : "",
  "staticImageT1dim" : "", 
