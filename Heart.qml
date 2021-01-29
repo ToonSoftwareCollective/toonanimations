@@ -6,14 +6,15 @@ Item {
     id: heart
 
     property bool destroyed: false
-    property bool righttoleft: (yesno==1)? true:false
-    property int yesno:  randomNumber(0, 1)
-    x: righttoleft?  (parent.width + 140) :-140
+	property int yesno:  randomNumber(0, 1)
+    
 
     width:250
     height:250
     y: randomNumber(100, 300)
 
+	property bool righttoleft: (yesno==1)? true:false
+    x: righttoleft?  (parent.width + 140) :-140
 
     Item {
         id: sprite
@@ -44,7 +45,7 @@ Item {
 
         Image {
             id: spriteImage
-            source:  isNxt? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart4.png" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/master/heart5.png"
+            source:  isNxt? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/heart4.png" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/heart5.png"
             height: isNxt? 250 : 125
             y:0
             x: isNxt? -250*sprite.framex-3 : -125*sprite.framex-3
