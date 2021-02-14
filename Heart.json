@@ -1,6 +1,6 @@
 {"mode": "Start", 
-"Toon1time": 12000, 
-"Toon2time": 5000, "component": 
+"Toon1time": 30000, 
+"Toon2time": 23000, "component": 
 "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Heart.qml",
  "staticImageT1" : "", 
  "staticImageT2" : "",
