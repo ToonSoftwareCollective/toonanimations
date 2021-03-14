@@ -2,9 +2,9 @@
 "Toon1time": 10000, 
 "Toon2time": 4500,  
 "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Eggs.qml",
- "staticImageT1" : "", 
- "staticImageT2" : "",
- "staticImageT1dim" : "", 
- "staticImageT2dim" : "",
+ "staticImageT1" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/eggs_T1.png", 
+ "staticImageT2" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/eggs_T2.png",
+ "staticImageT1dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/eggs_T1.png",
+ "staticImageT2dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/eggs_T2.png",
  "hideLogo" : "false",
 "visibleindimstate" : "yes"}
