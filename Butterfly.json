@@ -1,6 +1,6 @@
 {"mode": "Start", 
-"Toon1time": 11000, 
-"Toon2time": 5000, 
+"Toon1time": 15000, 
+"Toon2time": 8000, 
 "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Butterfly.qml", 
 "staticImageT1" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spring_T1.png", 
 "staticImageT2" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spring_T2.png",
