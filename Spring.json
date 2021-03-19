@@ -6,5 +6,5 @@
 "staticImageT2" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spring_T2.png",
  "staticImageT1dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spring_T1.png", 
  "staticImageT2dim" : "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/spring_T2.png",
- "hideLogo" : "false",
+ "hideLogo" : "true",
 "visibleindimstate" : "yes"}
