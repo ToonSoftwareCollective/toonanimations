@@ -38,7 +38,7 @@ Item {
             MouseArea{
                id: textPlateMouseArea
                anchors.fill: parent
-               onClicked: {textPlate.visible = false;animationMouseArea.enabled=true;animationscreen.animationRunning= false;april.destroy()}
+               onClicked: {textPlate.visible = false;destroyed = true;animationMouseArea.enabled=true;animationscreen.animationRunning= false;april.destroy()}
             }
             visible:false
     }
@@ -46,8 +46,11 @@ Item {
     MouseArea{
        id: animationMouseArea
        anchors.fill: parent
-       onClicked: {textPlate.visible = true;hideTextTimer.running = true;animationMouseArea.enabled=false}
-       enabled:true
+       onClicked: 
+        if (!destroyed)
+           {textPlate.visible = true;hideTextTimer.running = true;animationMouseArea.enabled=false}
+        else {}
+       enabled:!destroyed
    }
 
    Timer {
