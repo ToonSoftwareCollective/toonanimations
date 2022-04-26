@@ -1,6 +1,6 @@
 {"mode": "Start", 
-"Toon1time": 25000, 
-"Toon2time": 19000, 
+"Toon1time": 50000, 
+"Toon2time": 18000, 
 "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/Flag.qml",
  "staticImageT1" : "", 
  "staticImageT2" : "",
