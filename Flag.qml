@@ -9,15 +9,15 @@ Item {
     property int yesno:  randomNumber(0, 1)
     x: righttoleft?  (parent.width + 140) :-140
 
-    width:160
-    height:160
-    y: parent.height - 158
+    width:isNxt? 160:120
+    height:isNxt? 160:120
+    y: isNxt? (parent.height - 158):(parent.height - 118)
 
     Item {
         id: sprite
         anchors.centerIn: parent
-        height: 160
-        width: 160
+        height: isNxt? 160:120
+        width: isNxt? 160:120
         clip: true
         y: parent.height
         property int framex: righttoleft? 0:9
@@ -30,7 +30,7 @@ Item {
         Timer {
             running: true
             repeat: true
-            interval: 50
+            interval: 100
             onTriggered:
             {   if (righttoleft){
                     walk.restart();
@@ -51,10 +51,10 @@ Item {
 
         Image {
             id: spriteImage
-            source: righttoleft? "flag1.png":"flag2.png"
-            height:160
+            source: righttoleft? isNxt? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/flag1.png": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/flag1_t1.png": isNxt? "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/flag2.png":"https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/flag2_t1.png"
+            height: isNxt? 160:120
             y:0
-            x:-160*sprite.framex-3
+            x: isNxt?(-160*sprite.framex-3):(-120*sprite.framex-3)
         }
     }
 
@@ -63,13 +63,16 @@ Item {
         }
 
     property int speed: 3
+
+    //check if animation is out of screen
     Timer {
-        interval: 400
+        interval: 500
         running: true
         repeat: true
         onTriggered: {
+        console.log(righttoleft)
 
-        if (!isNxt && (flag.x - flag.width > 810)) {
+        if (!isNxt && (flag.x - flag.width > 830)) {
                flag.destroy();
             }
 
@@ -83,5 +86,5 @@ Item {
 
         }
     }
-
 }
+
