@@ -30,7 +30,7 @@ Item {
         Timer {
             running: true
             repeat: true
-            interval: 160
+            interval: isNxt? 100:200
             onTriggered:
             {   if (righttoleft){
                     walk.restart();
