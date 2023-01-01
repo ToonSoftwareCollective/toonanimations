@@ -51,7 +51,7 @@ Item {
 		radius: 4
 		Image {
 			id: background
-			source: "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/2023.png"
+			source: "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/2023.png"
 			anchors.fill: parent
 			fillMode: Image.PreserveAspectCrop	
         	}
