@@ -17,6 +17,13 @@ Item {
 	height: parent.height
         width: parent.width
         clip: true
+	
+	Image {
+		id: background
+		source: "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/2023.png"
+		anchors.fill: parent
+		fillMode: Image.PreserveAspectCrop	
+        }
 
         transform: Rotation {
            id: rotator
