@@ -53,16 +53,14 @@ Item {
      		Text{
          		id: buttonLabel
          		anchors {
-					top: parent.top
-					topMargin: isNxt ?  20:16
+					verticalCenter: parent.verticalCenter
 					horizontalCenter: parent.horizontalCenter	 		
 				}
 			width: parent.width
-			font.pixelSize:  isNxt ? 30 : 22
+			font.pixelSize:  isNxt ? 40 : 32
 			font.family: qfont.regular.name
 			font.bold: true
 			color:  "black" 
-			wrapMode: Text.WordWrap
          		text: "Happy New Year!"
      		}
 
