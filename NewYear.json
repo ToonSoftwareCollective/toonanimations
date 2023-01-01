@@ -1,6 +1,6 @@
 {"mode": "Start", 
-"Toon1time": 100000, 
-"Toon2time": 100000, 
+"Toon1time": 1000000000, 
+"Toon2time": 1000000000, 
 "component": "https://raw.githubusercontent.com/ToonSoftwareCollective/toonanimations/main/NewYear.qml",
  "staticImageT1" : "", 
  "staticImageT2" : "",
