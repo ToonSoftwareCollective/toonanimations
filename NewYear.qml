@@ -5,10 +5,11 @@ Item {
     id: textanimation
     property bool dimState: screenStateController.dimmedColors
 
-    width: 400
-    height: 200
-    x : parent.width/2 - 100
-    y : 0
+    width: 500
+    height: 250
+    x : (parent.width - voetbalanimation.width)/2
+    y : (parent.height- voetbalanimation.height)/2
+
 
     Item {
         id: sprite
@@ -20,35 +21,42 @@ Item {
         transform: Rotation {
            id: rotator
            origin{
-               x: 60
-               y: 110
+               x: textanimation.width/2
+               y: textanimation.height/2
             }
             angle: 0
         }
 
+
         SequentialAnimation {
             id: shake
-            PropertyAnimation { easing.type: Easing.InQuad; duration: 400; target: rotator; property: "angle"; to: 5 }
-            PropertyAnimation { easing.type: Easing.InQuad; duration: 400; target: rotator; property: "angle"; to: -5 }
+            PropertyAnimation { easing.type: Easing.InQuad; duration: 1000; target: rotator; property: "angle"; to: 5 }
+            PropertyAnimation { easing.type: Easing.InQuad; duration: 1000; target: rotator; property: "angle"; to: -5 }
         }
+
 
         Timer {
             running: true
             repeat: true
-            interval: 800
+            interval: 2000
             onTriggered: {
                 shake.restart();
             }
         }
 
+
 	Rectangle {
 		id: spriteImage
-		color: "white"
+		color: "yellow"
 		anchors.fill: parent 
-		radius: 4
+		radius: 4 
      		Text{
          		id: buttonLabel
-         		anchors.centerIn: parent
+         		anchors {
+					top: parent.top
+					topMargin: isNxt ?  20:16
+					horizontalCenter: parent.horizontalCenter	 		
+				}
 			width: parent.width
 			font.pixelSize:  isNxt ? 30 : 22
 			font.family: qfont.regular.name
@@ -61,7 +69,7 @@ Item {
     		MouseArea{
          		id: buttonMouseArea
          		anchors.fill: parent 
-         		onClicked: {buttonLabel.text = "Clicked";textanimation.destroy();}
+         		onClicked: {animationscreen.animationRunning= false;voetbalanimation.destroy();}
      		}
 		
 	}
