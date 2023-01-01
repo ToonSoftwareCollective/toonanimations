@@ -7,8 +7,8 @@ Item {
 
     width: 500
     height: 250
-    x : (parent.width - voetbalanimation.width)/2
-    y : (parent.height- voetbalanimation.height)/2
+    x : (parent.width - textanimation.width)/2
+    y : (parent.height- textanimation.height)/2
 
 
     Item {
