@@ -47,7 +47,8 @@ Item {
 
 	Rectangle {
 		id: spriteImage
-
+		color: "yellow"
+		anchors.fill: parent 
 		radius: 4
 		Image {
 			id: background
