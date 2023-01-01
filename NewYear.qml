@@ -74,5 +74,16 @@ Item {
 		
 	}
     }
+    
+    	Timer {
+		interval: 2500
+		running: true
+		repeat: true
+		onTriggered: {
+		if (animationscreen.animationRunning==false) {
+					textanimation.destroy();
+				}
+	}
+	}
 
 }
