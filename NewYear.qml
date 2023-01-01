@@ -69,7 +69,7 @@ Item {
     		MouseArea{
          		id: buttonMouseArea
          		anchors.fill: parent 
-         		onClicked: {animationscreen.animationRunning= false;voetbalanimation.destroy();}
+         		onClicked: {animationscreen.animationRunning= false;textanimation.destroy();}
      		}
 		
 	}
