@@ -63,7 +63,6 @@ Item {
 					verticalCenter: parent.verticalCenter
 					horizontalCenter: parent.horizontalCenter	 		
 				}
-			width: parent.width
 			font.pixelSize:  isNxt ? 40 : 32
 			font.family: qfont.regular.name
 			font.bold: true
