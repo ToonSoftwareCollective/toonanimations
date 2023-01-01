@@ -18,13 +18,6 @@ Item {
         width: parent.width
         clip: true
 	
-	Image {
-		id: background
-		source: "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/2023.png"
-		anchors.fill: parent
-		fillMode: Image.PreserveAspectCrop	
-        }
-
         transform: Rotation {
            id: rotator
            origin{
@@ -56,7 +49,13 @@ Item {
 		id: spriteImage
 		color: "yellow"
 		anchors.fill: parent 
-		radius: 4 
+		radius: 4
+		Image {
+			id: background
+			source: "https://github.com/ToonSoftwareCollective/toonanimations/blob/main/2023.png"
+			anchors.fill: parent
+			fillMode: Image.PreserveAspectCrop	
+        	}
      		Text{
          		id: buttonLabel
          		anchors {
