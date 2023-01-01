@@ -59,14 +59,15 @@ Item {
      		Text{
          		id: buttonLabel
          		anchors {
-					verticalCenter: parent.verticalCenter
+					top: parent.top
+					topMargin: isNxt ? 40 : 32
 					horizontalCenter: parent.horizontalCenter	 		
 				}
 			font.pixelSize:  isNxt ? 40 : 32
 			font.family: qfont.regular.name
 			font.bold: true
-			color:  "black" 
-         		text: "Happy New Year!"
+			color:  "white" 
+         		text: "TSC Wishes you a Happy New Year!"
      		}
 
     		MouseArea{
