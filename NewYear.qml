@@ -5,8 +5,8 @@ Item {
     id: textanimation
     property bool dimState: screenStateController.dimmedColors
 
-    width: 500
-    height: 250
+    width: 512
+    height: 316
     x : (parent.width - textanimation.width)/2
     y : (parent.height- textanimation.height)/2
 
